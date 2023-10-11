@@ -6,7 +6,7 @@ function Home() {
     console.log(appartements)
     return (
         <div>
-            <Banner text="Chez vous, partout et ailleurs" background="url('../../../firstbanner.png')" />
+            <Banner text="Chez vous, partout et ailleurs" background="../../../firstbanner.png" />
             <div class="rentingz">
                 <Rentings/>
                 <Rentings/>
