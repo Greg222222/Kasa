@@ -147,3 +147,56 @@
     margin: 0;
   }
 }
+.appartments {
+  padding: 0 5%;
+  .name-and-owner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: red;
+    .name-location {
+      .name {
+        margin: 0;
+        font-size: 40px;
+      }
+      .location {
+        margin: 0;
+        font-size: 16px;
+      }
+    }
+  }
+  .filters-and-stars {
+    display: flex;
+    justify-content: space-between;
+    .filters {
+      display: flex;
+      .filter {
+        margin: 0 10px;
+        list-style-type: none;
+        background: red;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+        color: white;
+        border-radius: 10px;
+      }
+    }
+    .stars {
+      display: flex;
+      list-style-type: none;
+      .star {
+        margin: 0 10px;
+      }
+    }
+  }
+  .Toggles {
+    display: flex;
+    justify-content: space-between;
+    .toggle {
+      width: 47%;
+      margin: 0;
+    }
+  }
+}

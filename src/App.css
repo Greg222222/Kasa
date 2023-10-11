@@ -152,4 +152,56 @@
   margin: 0;
 }
 
+.appartments {
+  padding: 0 5%;
+}
+.appartments .name-and-owner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: red;
+}
+.appartments .name-and-owner .name-location .name {
+  margin: 0;
+  font-size: 40px;
+}
+.appartments .name-and-owner .name-location .location {
+  margin: 0;
+  font-size: 16px;
+}
+.appartments .filters-and-stars {
+  display: flex;
+  justify-content: space-between;
+}
+.appartments .filters-and-stars .filters {
+  display: flex;
+}
+.appartments .filters-and-stars .filters .filter {
+  margin: 0 10px;
+  list-style-type: none;
+  background: red;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  color: white;
+  border-radius: 10px;
+}
+.appartments .filters-and-stars .stars {
+  display: flex;
+  list-style-type: none;
+}
+.appartments .filters-and-stars .stars .star {
+  margin: 0 10px;
+}
+.appartments .Toggles {
+  display: flex;
+  justify-content: space-between;
+}
+.appartments .Toggles .toggle {
+  width: 47%;
+  margin: 0;
+}
+
 /*# sourceMappingURL=App.css.map */
