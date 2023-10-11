@@ -1,9 +1,18 @@
 import appartements from "../../assets/logements.json"
+import Rentings from "../../components/Rentings"
+import Banner from "../../components/Banner"
 
 function Home() {
     console.log(appartements)
     return (
-        <h2>Accueil</h2>
+        <div>
+            <Banner text="Chez vous, partout et ailleurs" background="url('../../../firstbanner.png')" />
+            <div class="rentingz">
+                <Rentings/>
+                <Rentings/>
+            </div>
+        </div>
+        
     )
   }
   

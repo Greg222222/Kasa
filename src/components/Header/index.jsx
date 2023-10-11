@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <nav>
-      <Link to="/survey/1">
-        Faire le test
-      </Link>
-      <Link to="/">Accueil</Link>
-      <Link to="/survey">Questionnaire</Link>
+    <div class="header">
+      <img src="../../../LOGO.png" alt="logo Kasa" class="logo"/>
+    <nav class="menu-container">
+      <Link to="/" class="menu">Accueil</Link>
+      <Link to="/about" class="menu">À propos</Link>
     </nav>
+    </div>
   )
 }
 
