@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import ApartmentsData from '../../assets/logements.json'
 import ImageSlider from '../../components/ImageSlider'
+import Error from '../Error'
 
 function Appartments(props) {
   let [appartements, setAppartements] = useState(null)
@@ -20,7 +21,7 @@ function Appartments(props) {
   const apartmentData = ApartmentsData.find((apartment) => apartment.id === id)
 
   if (!apartmentData) {
-    return <div>Appartement non trouvé</div>
+    return <Error/>
   }
 
   const numberOfStars = apartmentData.rating

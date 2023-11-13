@@ -35,8 +35,9 @@
       justify-content: space-between;
       .filters {
         display: flex;
+        padding: 0;
         .filter {
-          margin: 0 10px;
+          margin-right: 20px ;
           list-style-type: none;
           background: #ff6060;
           padding: 5px 30px;
