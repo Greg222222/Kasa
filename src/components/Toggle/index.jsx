@@ -1,3 +1,4 @@
+import './style.scss'
 import React, { useState } from 'react';
 function Toggle({ title, content }) {
     const [isOpen, setIsOpen] = useState(false);

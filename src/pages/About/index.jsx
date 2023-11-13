@@ -1,3 +1,4 @@
+import './style.scss'
 import Banner from '../../components/Banner'
 import React from 'react'
 import Toggle from '../../components/Toggle'

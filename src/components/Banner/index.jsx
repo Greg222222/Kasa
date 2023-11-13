@@ -1,3 +1,4 @@
+import './style.scss'
 function Banner({ text, background }) {
   const bannerStyle = {
     background: `url(${background})`, // Remplacez par la valeur de votre image de fond
@@ -7,7 +8,7 @@ function Banner({ text, background }) {
   }
   return (
     <div className="banner" style={bannerStyle}>
-        <p class="banner-text">{text ? text : ''}</p>
+        <h1 className="banner-text">{text ? text : ''}</h1>
     </div>
   );
 }

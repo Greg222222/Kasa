@@ -1,3 +1,4 @@
+import './style.scss'
 function Error() {
   return (
     <div className="error">

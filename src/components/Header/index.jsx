@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-
+import './style.scss'
 function Header() {
   return (
-    <div class="header">
-      <img src="../../../LOGO.png" alt="logo Kasa" class="logo"/>
-    <nav class="menu-container">
-      <Link to="/" class="menu">Accueil</Link>
-      <Link to="/about" class="menu">À propos</Link>
+    <div className="header">
+      <img src="../../../LOGO.png" alt="logo Kasa" className="logo"/>
+    <nav className="menu-container">
+      <Link to="/" className="menu">Accueil</Link>
+      <Link to="/about" className="menu">À propos</Link>
     </nav>
     </div>
   )
