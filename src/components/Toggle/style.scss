@@ -1,10 +1,11 @@
 .toggle {
-    background: red;
+    background: #ff6060;
     margin: 20px 10%;
     color: white;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    
     .title-and-arrow {
       display: flex;
       justify-content: space-between;
@@ -25,10 +26,17 @@
     }
     .toggle-content {
       background: whitesmoke;
-      color: red;
+      color: #ff6060;
       margin: 0;
       padding: 20px 10px 10px 10px;
       font-size: 18px;
       max-height: 100%;
+      border-radius: 0 0 10px 10px;
     }
+  }
+  .closed {
+    height: 52px;
+    }
+  .open {
+    height: 100%;
   }
