@@ -21,6 +21,9 @@ const ImageSlider = ({ pictures }) => {
       <img className='mainPicture' src={pictures[currentIndex]} alt="Appartement" />
       <img className='leftArrow' src={leftArrow} alt="flèche gauche" onClick={goToPrevious} />
       <img className='rightArrow' src={rightArrow} alt="flèche droite" onClick={goToNext} />
+      <div className='counter'>
+        {currentIndex + 1} / {pictures.length}
+      </div>
     </div>
   )
 }

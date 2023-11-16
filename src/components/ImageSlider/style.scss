@@ -25,4 +25,11 @@
       cursor: pointer;
     }
   }
+  .counter {
+    position: absolute;
+    display: flex;
+    align-self: center;
+    left: 50%;
+    top: 650px;
+  }
 }
