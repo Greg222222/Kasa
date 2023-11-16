@@ -21,7 +21,7 @@ function Appartments(props) {
   const apartmentData = ApartmentsData.find((apartment) => apartment.id === id)
 
   if (!apartmentData) {
-    return <Error/>
+    return <Error />
   }
 
   const numberOfStars = apartmentData.rating
@@ -64,34 +64,37 @@ function Appartments(props) {
           )
         )}
       </ul>
-    );
+    )
   }
 
   return (
     <div className="appartments">
       <ImageSlider pictures={apartmentData.pictures} />
-      <div className="name-and-owner">
-        <div className="name-location">
-          <h1 className="name">{apartmentData.title}</h1>
-          <h2 className="location">{apartmentData.location}</h2>
+      <div className="apt-details">
+        <div className="name-and-filters">
+          <div className="name-location">
+            <h1 className="name">{apartmentData.title}</h1>
+            <h2 className="location">{apartmentData.location}</h2>
+          </div>
+          <ul className="filters">
+            {apartmentData.tags.map((tag) => {
+              return <li className="filter">{tag}</li>
+            })}
+          </ul>
         </div>
-        <div className="owner">
-          <h3 className="owner-name">{apartmentData.host.name}</h3>
-          <img
-            className="owner-picture"
-            src={apartmentData.host.picture}
-            alt="host"
-          />
+        <div className="stars-and-owner">
+          <div className="owner">
+            <h3 className="owner-name">{apartmentData.host.name}</h3>
+            <img
+              className="owner-picture"
+              src={apartmentData.host.picture}
+              alt="host"
+            />
+          </div>
+          <StarList numberOfStars={numberOfStars} />
         </div>
       </div>
-      <div className="filters-and-stars">
-        <ul className="filters">
-          {apartmentData.tags.map((tag) => {
-            return <li className="filter">{tag}</li>
-          })}
-        </ul>
-        <StarList numberOfStars={numberOfStars} />
-      </div>
+
       <div className="Toggles">
         <Toggle
           className="toggle"
@@ -100,7 +103,7 @@ function Appartments(props) {
         />
         <Toggle
           className="toggle"
-          title="Equipements"
+          title="Équipements"
           content={apartmentData.equipments.map((equipment) => {
             return <li className="equipment">{equipment}</li>
           })}
